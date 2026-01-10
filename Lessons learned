@@ -1,0 +1,4 @@
+Always match the abstraction level of the situation - logs vs analysis matters.
+SIEM questions may test literal log interpretation, not MITRE mapping.
+Reverse shells often embed callback IP/port in payloads - extracting from _raw is essential.
+Site-discovery files (robots.txt) remain a common source of sensitive exposure.
