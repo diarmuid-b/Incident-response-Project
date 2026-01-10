@@ -22,10 +22,6 @@ Accurately report attacker techniques as recorded in SIEM logs
 
 Splunk Enterprise – log analysis and correlation
 
-Linux authentication logs (sshd, pam_unix)
-
-Web server access logs
-
 Network / flow telemetry
 
 Blue Team Labs Online (BTLO)
@@ -39,7 +35,7 @@ Correlated suspicious web activity to a single external source IP:
 
 **2️ Web Exploitation & Reverse Shell**
 
-Detected access to a malicious PHP file (shell.php)
+Detected access to a malicious PHP file (shell.pre-oh-my-zsh)
 
 Confirmed execution of a reverse shell payload
 
@@ -54,18 +50,9 @@ Identified exposed administrative paths via site-discovery files:
 
 **4️ Post-Compromise Authentication Activity**
 
-Analyzed Linux authentication logs showing repeated password failures followed by successful access
+Analyzed Splunk logs showing repeated password failures followed by successful access
 
 Correctly identified the technique as explicitly recorded in the SIEM logs:
 
 SSH brute-force
 
-**Key Takeaways**
-
-Effective SIEM investigations rely on what the logs actually record, not assumptions
-
-Raw log parsing is often required when structured fields are inconsistent
-
-Site-discovery files remain a common source of sensitive exposure
-
-Understanding the distinction between evidence and interpretation is critical in SOC work
