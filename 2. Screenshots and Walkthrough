@@ -1,5 +1,5 @@
 **1. Attacker IP Identification**
-It started with looking for unusual requests then sorting through uri's to look for strange activity : [view screenshot](../screenshots/search%20for%20unusual%20requests.png)
+It started with looking for unusual requests then sorting through uri's to look for strange activity : [view screenshot](../../screenshots/search%20for%20unusual%20requests.png)
 I then looked at the event in splunk and used that information to find the source ip: [view screenshot(https://github.com/diarmuid-b/Incident-response-Project/blob/main/screenshots/Identify%20source%20ip.png?raw=true)
 Last step here is to verify address is the attacker address by confirming unusual activity related to ip. Here we can see 2 suspicious items involving NC and an usual middlware sub-request which is covered in more detail in the next section: [view screenshot](https://github.com/diarmuid-b/Incident-response-Project/blob/main/screenshots/confirming%20malicious%20ip.png?raw=true)
 **2. Reverse shell upload**
